@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">user name</th>
+      <th scope="col">active</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users$ | async; trackBy: trackByFn">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>
+        <app-toggle-control
+          [value]="user.active"
+          (valueChange)="updateUser(user.id)"
+        ></app-toggle-control>
+      </td>
+    </tr>
+  </tbody>
+</table>

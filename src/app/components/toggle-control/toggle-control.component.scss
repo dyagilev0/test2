@@ -1,0 +1,17 @@
+button {
+  width: 100%;
+  min-width: 100px;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &.on {
+    background-color: #78a578;
+    color: white;
+  }
+  &.off {
+    background-color: darken(#b23b3b, 10%);
+    color: white;
+  }
+}

@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { UsersComponent } from './components/users/users.component';
+import { UserAddComponent } from './components/user-add/user-add.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToggleControlComponent } from './components/toggle-control/toggle-control.component';
+import { ModalComponent } from './components/modal/modal.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsersComponent,
+    UserAddComponent,
+    ToggleControlComponent,
+    ModalComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

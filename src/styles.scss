@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import '/src/scss/colors';
+@import '/src/scss/button';
+@import '/src/scss/base';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+

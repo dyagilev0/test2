@@ -1,0 +1,27 @@
+button {
+  padding: 10px 20px;
+  background-color: $button-color;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: darken($button-color, 5%);
+  }
+
+  &:active {
+    background-color: $button-color;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.cancel {
+    background-color: $secondary-color;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="modal">
+  <div class="modal-content">
+    <h2>Add User</h2>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <label for="name">name</label>
+      <input type="text" id="name" name="name" formControlName="name" />
+
+      <label for="active-check">active</label>
+      <app-toggle-control formControlName="active"></app-toggle-control>
+
+      <div class="form-buttons">
+        <button type="button" class="cancel" (click)="close()">cancel</button>
+        <button type="submit" [disabled]="!form.valid">add</button>
+      </div>
+    </form>
+  </div>
+</div>
